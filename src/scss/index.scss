@@ -1,0 +1,13 @@
+@import '~font-awesome/css/font-awesome.css';
+@import './resets.scss';
+@import './colors.scss';
+@import './sizing.scss';
+@import './mixins.scss';
+@import './grid.scss';
+@import './headings.scss';
+@import './text.scss';
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+body {
+  font-size: 20px;
+}
