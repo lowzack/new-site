@@ -4,14 +4,21 @@
     <div class="row">
       <div class="gr-4"></div>
       <div class="gr-4"><h1>Zack Low</h1></div>
-      <div class="gr-4"></div>
+      <div class="gr-4">
+        <social-links class="inline"></social-links>
+      </div>
     </div>
   </nav>
 </template>
 
 <script>
+import SocialLinks from '../SocialLinks.vue';
+
 export default {
   name: 'fixed-nav',
+  components: {
+    socialLinks: SocialLinks,
+  },
   data() {
     return {
     };
@@ -34,6 +41,7 @@ nav {
   border-color: darken($global-nav-background, 20%);
   border-style: solid;
   border-width: 0 0 1px 0;
+  color: #000;
   @include box-shadow (0, -15px, 40px, #000)
   .row {
     height: $nav-min-height;

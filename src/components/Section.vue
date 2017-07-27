@@ -43,6 +43,9 @@ section {
   &.secondary {
     background-color: $secondary-background;
   }
+  &.footer {
+    background-color: #000;
+  }
   @include box-shadow (0, -5px, 10px, rgba(0,0,0,.2), true)
 }
 </style>

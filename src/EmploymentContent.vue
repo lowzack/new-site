@@ -37,7 +37,7 @@
     margin: 0 auto;
     max-width: 960px;
     .gr-4 {
-      padding: 3em;
+      padding: 4em;
     }
     h1 {
       font-size: 2.5em;
@@ -55,7 +55,7 @@
     }
     ul {
       li {
-        line-height: 1.5em;
+        line-height: 1.25em;
         margin-left: 2em;
         list-style: circle;
       }

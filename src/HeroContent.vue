@@ -4,17 +4,20 @@
       <h1 class="name">Zack Low</h1>
       <nav-container></nav-container>
       <h2 class="title">Software Engineer</h2>
-      <h3>I enjoy building modern scalable web applications across the entire stack with experience front-end engineering in JavaScript, API design and development, and DevOps.</h3>
+      <h3>Passionate about building modern scalable web applications across the entire stack, with experience front-end engineering in JavaScript, API design and development, Database design and development, data modelling and DevOps.</h3>
+      <social-links class="social-icons inline"></social-links>
     </div>
   </div>
 </template>
 
 <script>
 import NavContainer from './NavbarTop.vue';
+import SocialLinks from './SocialLinks.vue'
 
 export default {
   components: {
-    navContainer: NavContainer
+    navContainer: NavContainer,
+    socialLinks: SocialLinks
   }
 }
 </script>
@@ -22,8 +25,16 @@ export default {
 <style lang="scss" scoped>
 @import "./scss/colors.scss";
 @import "./scss/mixins.scss";
+@import "./scss/resets.scss";
+
+.social-icons {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 2em;
+}
 
 .container {
+  color: $white;
   max-width: 900px;
   margin: 0 auto;
   display: flex;
@@ -31,19 +42,18 @@ export default {
   justify-content: center;
   padding:1em;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 5em;
   text-shadow: 0px 0px 5em #000;
 }
-h1 {
-  color: $white;
-  font-size: 5em;
-}
 h2 {
-  color: $white;
   font-size: 3.5em;
+  text-shadow: 0px 0px 5em #000;
 }
 h3 {
-  color: $white;
   padding-top: .5em;
-  margin-bottom: auto;
+  text-shadow: 0px 0px 5em #000;
 }
 </style>
