@@ -12,7 +12,7 @@
 
 <script>
 import NavContainer from './NavbarTop.vue';
-import SocialLinks from './SocialLinks.vue'
+import SocialLinks from './components/SocialLinks.vue'
 
 export default {
   components: {

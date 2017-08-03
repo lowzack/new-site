@@ -23,7 +23,7 @@ import Navbar from './components/Navbar.vue';
 import Section from './components/Section.vue';
 import HeroContent from './HeroContent.vue';
 import NavbarTop from './NavbarTop.vue';
-import SocialLinks from './SocialLinks.vue';
+import SocialLinks from './components/SocialLinks.vue';
 import EmploymentContent from './EmploymentContent.vue';
 import PersonalContent from './PersonalContent.vue';
 import backgroundImage from './media/20170625_204038_HDR.jpg';

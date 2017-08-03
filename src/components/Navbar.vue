@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SocialLinks from '../SocialLinks.vue';
+import SocialLinks from './SocialLinks.vue';
 
 export default {
   name: 'fixed-nav',
