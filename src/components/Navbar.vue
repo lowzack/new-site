@@ -33,7 +33,7 @@ nav {
   text-align: center;
   background-color: $global-nav-background;
   font-family: 'Kaushan Script', cursive;
-  min-height: $nav-min-height;
+//  min-height: $nav-min-height;
   width: 100%;
   position: fixed;
   top: 0;

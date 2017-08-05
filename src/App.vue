@@ -7,7 +7,6 @@
       <employment></employment>
     </psection>
     <psection class="secondary">
-      <!--<personal></personal>-->
       <personal></personal>
     </psection>
     <psection class="footer">
@@ -44,6 +43,9 @@ export default {
     socialLinks: SocialLinks,
     personal: PersonalContent,
   },
+  mounted() {
+    console.log('mounted');
+  }
 }
 </script>
 
@@ -69,18 +71,5 @@ export default {
   text-align: center;
   padding-top: 2em;
   color: #FFF;
-}
-
-.hidden {
-  display: none;
-  opacity: 0;
-}
-
-.ease-in {
-  -webkit-transition: opacity 3s ease-in-out;
-  -moz-transition: opacity 3s ease-in-out;
-  -ms-transition: opacity 3s ease-in-out;
-  -o-transition: opacity 3s ease-in-out;
-  opacity: 1;
 }
 </style>

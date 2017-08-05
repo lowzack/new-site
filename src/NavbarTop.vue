@@ -25,6 +25,7 @@ export default {
   components: {
     navbar: Navbar
   },
+  visible: false,
   methods: {
     scrolled(evt, el) {
       const navbar = this.$refs.navbar.$el;
@@ -32,7 +33,7 @@ export default {
         navbar.classList.remove('hidden');
         navbar.classList.remove('ease-out');
         navbar.classList.add('ease-in');
-      }else {
+      }else if (navbar.classList.contains('ease-in')){
         navbar.classList.remove('ease-in');
         navbar.classList.add('ease-out');
       }
@@ -45,21 +46,24 @@ export default {
 <style lang="scss" scoped>
 .hidden {
   opacity: 0;
+  visibility: hidden;
 }
 
 .ease-in {
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -ms-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
+  -webkit-transition: visibility 0s, opacity .5s ease-in-out;
+  -moz-transition: visibility 0s, opacity .5s ease-in-out;
+  -ms-transition: visibility 0s, opacity .5s ease-in-out;
+  -o-transition: visibility 0s, opacity .5s ease-in-out;
   opacity: 1;
+  visibility: visible;
 }
 
 .ease-out {
-  -webkit-transition: opacity .5s ease-out;
-  -moz-transition: opacity .5s ease-out;
-  -ms-transition: opacity .5s ease-out;
-  -o-transition: opacity .5s ease-out;
+  -webkit-transition: visibility 1s, opacity .5s ease-out;
+  -moz-transition: visibility 1s, opacity .5s ease-out;
+  -ms-transition: visibility 1s, opacity .5s ease-out;
+  -o-transition: visibility 1s, opacity .5s ease-out;
   opacity: 0;
+  visibility: hidden;
 }
 </style>
