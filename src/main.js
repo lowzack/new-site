@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-if(document.getElementById('app') === undefined) {
+if(document.getElementById('app') === null) {
   const appDiv = document.createElement('div')
   appDiv.id = 'app';
-  document.appendChild(appDiv);
+  document.body.appendChild(appDiv);
 }
 
 document.body.style.padding = 0;
