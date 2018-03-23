@@ -3,15 +3,21 @@ import './scss/main.scss';
 import Vue from 'vue';
 import App from './App.vue';
 
+// Set up META tags for device viewport (responsiveness)
+const firstMeta = document.getElementsByTagName('meta')[0];
+const viewportMeta = document.createElement('meta');
+viewportMeta.name = "viewport";
+viewportMeta.content = "width=device-width, initial-scale=1, shrink-to-fit=no";
+firstMeta.parentNode.insertBefore(viewportMeta, firstMeta.nextSibling);
+
+// Ensure there is a <div> to attatch our app to
 if(document.getElementById('app') === null) {
   const appDiv = document.createElement('div')
   appDiv.id = 'app';
   document.body.appendChild(appDiv);
 }
 
-document.body.style.padding = 0;
-document.body.style.margin = 0;
-
+// Initialize app
 new Vue({
   el: '#app',
   render: h => h(App)

@@ -1,6 +1,8 @@
 <template>
   <section :style="style">
-    <slot></slot>
+    <div class="container">
+      <slot></slot>
+    </div>
   </section>
 </template>
 
@@ -23,28 +25,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../scss/index.scss";
+@import "../scss/main.scss";
 
 section {
-  padding: $section-padding 0;
-  min-height: 60vh;
-  display: flex;
-  &.background-cover {
-    background-size: cover;
-    background-color: cornflowerblue;
-  }
-  &.hero-primary {
-    background-color: $accent-color;
-  }
-  &.primary {
-    background-color: $primary-background;
-  }
-  &.secondary {
-    background-color: $secondary-background;
-  }
-  &.footer {
-    background-color: #000;
-  }
-  @include box-shadow (0, -5px, 10px, rgba(0,0,0,.2), true)
+  background-color: cornflowerblue
 }
 </style>

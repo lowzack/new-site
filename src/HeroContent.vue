@@ -1,10 +1,9 @@
 <template>
-  <div class="container">
+  <div class="transparent-bg p-2">
     <div>
       <h1 class="name">Zack Low</h1>
-      <nav-container></nav-container>
       <h2 class="title">Software Engineer</h2>
-      <h3>Passionate about building modern scalable web applications across the entire stack, with experience front-end engineering in JavaScript, API design and development, Database design and development, data modelling and DevOps.</h3>
+      <h4>Passionate about building modern scalable web applications across the entire stack, with experience front-end engineering in JavaScript, API design and development, Database design and development, data modelling and DevOps.</h4>
       <social-links class="social-icons inline"></social-links>
     </div>
   </div>
@@ -23,9 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./scss/colors.scss";
-@import "./scss/mixins.scss";
-@import "./scss/resets.scss";
+@import './scss/main.scss';
 
 .social-icons {
   font-size: 3em;
@@ -33,27 +30,12 @@ export default {
   padding-top: 2em;
 }
 
-.container {
+.transparent-bg {
   color: $white;
-  max-width: 900px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding:1em;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-  font-size: 5em;
-  text-shadow: 0px 0px 5em #000;
-}
-h2 {
-  font-size: 3.5em;
-  text-shadow: 0px 0px 5em #000;
-}
-h3 {
-  padding-top: .5em;
-  text-shadow: 0px 0px 5em #000;
 }
 </style>
