@@ -1,5 +1,7 @@
-import Vue from 'vue'
-import App from './App.vue'
+import 'bootstrap';
+import './scss/main.scss';
+import Vue from 'vue';
+import App from './App.vue';
 
 if(document.getElementById('app') === null) {
   const appDiv = document.createElement('div')
