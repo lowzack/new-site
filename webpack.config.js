@@ -1,11 +1,12 @@
-var path = require('path')
-var webpack = require('webpack')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
@@ -52,24 +53,24 @@ module.exports = {
     }
   },
   devServer: {
-    historyApiFallback: true,
     noInfo: true
   },
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Zack Low - Software Engineer'
+    })
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
+  module.exports.mode = 'production'
   module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"'
-      }
-    }),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
       compress: {
