@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <psection class="background-cover pt-2" :image="image">
+    <psection class="background-cover py-2" :image="image">
       <hero-content></hero-content>
     </psection>
     <psection class="primary">
