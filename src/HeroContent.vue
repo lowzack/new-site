@@ -50,9 +50,6 @@ export default {
 .transparent-bg {
   color: $white;
   margin: 0 auto;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
   background-color: rgba(0, 0, 0, 0.65);
 }
 </style>
