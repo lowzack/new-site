@@ -12,26 +12,7 @@
 </template>
 
 <script>
-import NavContainer from './NavbarTop.vue';
-
-export default {
-  components: {
-    navContainer: NavContainer,
-  }
-}
 </script>
 
 <style lang="scss" scoped>
-@import "./scss/index.scss";
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  width: 100%;
-
-  p {
-    font-size: 1.25em;
-    text-indent: 2em;
-    padding-top: 2em;
-  }
-}
 </style>

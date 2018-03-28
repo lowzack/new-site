@@ -27,29 +27,5 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "../scss/index.scss";
 
-nav {
-  text-align: center;
-  background-color: $global-nav-background;
-  font-family: 'Kaushan Script', cursive;
-//  min-height: $nav-min-height;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-color: darken($global-nav-background, 20%);
-  border-style: solid;
-  border-width: 0 0 1px 0;
-  color: #000;
-  @include box-shadow (0, -15px, 40px, #000)
-  .row {
-    height: $nav-min-height;
-    align-items: center;
-    .gr-* {
-      align-items: center;
-      justify-content: center;
-    }
-  }
-}
 </style>
