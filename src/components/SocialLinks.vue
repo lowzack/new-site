@@ -1,13 +1,29 @@
 <template>
   <ul>
-    <li :class="itemClass"><a href="https://www.linkedin.com/in/lowzack/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-    <li :class="itemClass"><a href="https://github.com/takeWarning"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+    <li :class="itemClass">
+      <a href="https://www.linkedin.com/in/lowzack/">
+        <font-awesome-icon :icon="['fab', 'linkedin']" aria-hidden="true"></font-awesome-icon>
+      </a>
+    </li>
+    <li :class="itemClass">
+      <a href="https://github.com/takeWarning">
+        <font-awesome-icon :icon="['fab', 'github']" aria-hidden="true"></font-awesome-icon>
+      </a>
+    </li>
   </ul>
 </template>
 
 <script>
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
+import fontawesome from '@fortawesome/fontawesome';
+import brands from '@fortawesome/fontawesome-free-brands';
+fontawesome.library.add(brands);
+
 export default {
-  props: ['itemClass']
+  props: ['itemClass'],
+  components: {
+    FontAwesomeIcon
+  }
 }
 </script>
 

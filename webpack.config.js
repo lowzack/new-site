@@ -31,7 +31,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(scss)$/,
+        test: /\.(scss|css)$/,
         use: [{
           loader: 'style-loader', // inject CSS to page
         }, {
@@ -58,13 +58,16 @@ module.exports = {
         }
       },
       {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
-        query: {
-          limit: 10000,
-          name: 'fonts/[name].[hash].[ext]'
-        }
-      }
+         test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+         use: [{
+           loader: 'file-loader',
+           options: {
+             name: '[name].[ext]',
+             outputPath: 'fonts/',    // where the fonts will go
+             publicPath: '../'       // override the default path
+           }
+         }]
+       }
     ]
   },
   resolve: {
@@ -96,13 +99,10 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.mode = 'production'
+  module.exports.optimization = {
+    minimize: true
+  };
   module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
-      }
-    }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })

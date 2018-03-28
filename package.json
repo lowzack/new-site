@@ -11,6 +11,9 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-brands": "^5.0.9",
+    "@fortawesome/vue-fontawesome": "^0.0.22",
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
     "gridle": "^2.0.48",

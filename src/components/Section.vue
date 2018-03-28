@@ -26,8 +26,4 @@ export default {
 
 <style lang="scss" scoped>
 @import "../scss/main.scss";
-
-section {
-  background-color: cornflowerblue
-}
 </style>
