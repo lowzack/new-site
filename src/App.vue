@@ -3,8 +3,11 @@
     <psection class="background-cover py-2" :image="image">
       <hero-content></hero-content>
     </psection>
-    <psection class="primary">
+    <psection class="bg-light">
       <employment></employment>
+    </psection>
+    <psection class="bg-white">
+      <education></education>
     </psection>
   </div>
 </template>
@@ -16,6 +19,7 @@ import HeroContent from './HeroContent.vue';
 import NavbarTop from './NavbarTop.vue';
 import SocialLinks from './components/SocialLinks.vue';
 import EmploymentContent from './EmploymentContent.vue';
+import EducationContent from './EducationContent.vue';
 import backgroundImage from './media/20170625_204038_HDR.jpg';
 
 export default {
@@ -31,6 +35,7 @@ export default {
     psection: Section,
     heroContent: HeroContent,
     employment: EmploymentContent,
+    education: EducationContent,
     socialLinks: SocialLinks,
   },
   mounted() {
@@ -40,4 +45,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 </style>
