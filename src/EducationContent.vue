@@ -8,7 +8,7 @@
       <div class="col-sm-9 d-flex align-items-center">
         <div class="d-block w-100 text-right">
           <h2>Rochester Institute of Technology</h2>
-          <h3>Information Technology <small>2015</small></h3>
+          <h3>Information Technology <small>2016</small></h3>
           <h4>Web and Mobile Development <small>Concentration</small></h4>
         </div>
       </div>
