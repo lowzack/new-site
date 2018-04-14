@@ -1,6 +1,41 @@
 @import "~bootstrap/scss/bootstrap";
-@import "./mixins.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-section {
-  @include box-shadow(0, 0, 5, #000, false);
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  // font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway, sans-serif;
+}
+
+@include media-breakpoint-up(xs) {
+  html {
+    font-size: .8rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1rem;
+  }
 }

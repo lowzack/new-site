@@ -1,6 +1,7 @@
 <template>
+  <transition appear name="slide-fade">
   <div class="p-4">
-    <h1 class="mt-1 border-bottom border-primary">Current Employment</h1>
+      <h1 class="mt-1 border-bottom border-primary">Current Employment</h1>
     <div class="row justify-content-sm-center p-4">
       <div class="col-sm-9 d-flex align-items-center">
         <div class="d-block w-100r">
@@ -19,11 +20,29 @@
       </div>
     </div>
   </div>
+  </transition>
 </template>
 
 <script>
+export default {
+  data: {
+    show: true
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all 2s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(50px);
+  opacity: 0;
+}
 </style>
