@@ -79,7 +79,8 @@ module.exports = {
     }),
     // Generate index.html
     new HtmlWebpackPlugin({
-      title: 'Zack Low - Software Engineer'
+      title: 'Zack Low - Software Engineer',
+      favicon: './src/media/favicon.ico'
     })
   ]
 }

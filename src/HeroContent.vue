@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-sm-center">
         <div class="col-sm-3 text-center d-flex align-items-center">
-          <img v-bind:src="profile" class="img-fluid rounded-circle"></img>
+          <img v-bind:src="profile" class="img-fluid rounded-circle profile"></img>
         </div>
         <div class="col-sm-auto d-flex align-items-center">
           <div class="d-block w-100 text-center">
@@ -46,6 +46,17 @@ export default {
 
 <style lang="scss" scoped>
 @import './scss/main.scss';
+
+@include media-breakpoint-down(xs) {
+  .profile {
+    max-width: 50% !important;
+    margin: 0 auto;
+  }
+}
+
+.profile {
+  max-width: 100%;
+}
 
 .transparent-bg {
   color: $white;

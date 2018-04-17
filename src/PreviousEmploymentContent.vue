@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="col-sm-3 text-center d-flex align-items-center">
-        <img class="img-fluid mx-auto" src="https://www.rit.edu/its/system/files/logo-home_0.png"/>
+        <img class="img-fluid mx-auto py-2" src="https://www.rit.edu/its/system/files/logo-home_0.png"/>
       </div>
     </div>
     <div class="row justify-content-sm-center p-4">
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="col-sm-3 text-center d-flex align-items-center">
-        <img class="img-fluid mx-auto" src="https://closetfullofcash.com/wp-content/uploads/1stdibs_logo.png"/>
+        <img class="img-fluid mx-auto py-2" src="https://closetfullofcash.com/wp-content/uploads/1stdibs_logo.png"/>
       </div>
     </div>
   </div>
