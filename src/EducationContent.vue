@@ -3,7 +3,7 @@
     <h1 class="mt-1 border-bottom border-primary">Education</h1>
     <div class="row justify-content-sm-center p-4">
       <div class="col-sm-3 text-center d-flex align-items-center">
-        <img class="img-fluid mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rochester_Institute_of_Technology_seal.svg/1200px-Rochester_Institute_of_Technology_seal.svg.png"/>
+        <img class="img-fluid mx-auto" src="./media/rit_logo.png"/>
       </div>
       <div class="col-sm-9 d-flex align-items-center">
         <div class="d-block w-100 text-right">

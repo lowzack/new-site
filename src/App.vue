@@ -4,10 +4,14 @@
       <hero-content></hero-content>
     </psection>
     <psection class="bg-light shadow-inverted">
-      <employment></employment>
+      <transition-slide-right>
+        <employment></employment>
+      </transition-slide-right>
     </psection>
     <psection class="bg-white shadow">
-      <pemployment></pemployment>
+      <transition-slide-right>
+        <pemployment></pemployment>
+      </transition-slide-right>
     </psection>
     <psection class="bg-light shadow">
       <education></education>
@@ -23,6 +27,7 @@ import NavbarTop from './NavbarTop.vue';
 import SocialLinks from './components/SocialLinks.vue';
 import EmploymentContent from './EmploymentContent.vue';
 import PreviousEmploymentContent from './PreviousEmploymentContent.vue';
+import TransitionSlideRight from './components/TransitionSlideRight.vue'
 import EducationContent from './EducationContent.vue';
 import backgroundImage from './media/20170625_204038_HDR.jpg';
 
@@ -42,6 +47,7 @@ export default {
     pemployment: PreviousEmploymentContent,
     education: EducationContent,
     socialLinks: SocialLinks,
+    transitionSlideRight: TransitionSlideRight
   },
   mounted() {
     console.log('mounted');
