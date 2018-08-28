@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="col-sm-3 text-center d-flex align-items-center">
-        <img class="img-fluid mx-auto py-2" src="https://www.rit.edu/its/system/files/logo-home_0.png"/>
+        <img class="img-fluid mx-auto py-2" src="./media/its_logo.png"/>
       </div>
     </div>
     <div class="row justify-content-sm-center p-4">
@@ -24,13 +24,13 @@
           <h3>Frontend Engineer Intern <small>June 2015 - August 2015</small></h3>
           <p class="description">Develop and maintian internal tools to streamline workflows of an IT support organization</p>
           <ul>
-            <li>Implemented complex user interactions using JavaScript and HTML.</li>
-            <li>Leveraged best practices to create modularized reusable code.</li>
+            <li>Developed critical front-end elements, providing updated UI and functionality around eCommerce item management.</li>
+            <li>Created Python scripts to dynamically control Jenkins jobs and plugins to ensure code coverage.</li>
           </ul>
         </div>
       </div>
       <div class="col-sm-3 text-center d-flex align-items-center">
-        <img class="img-fluid mx-auto py-2" src="https://closetfullofcash.com/wp-content/uploads/1stdibs_logo.png"/>
+        <img class="img-fluid mx-auto py-2" src="./media/1stdibs_logo.png"/>
       </div>
     </div>
   </div>
@@ -40,5 +40,4 @@
 </script>
 
 <style lang="scss" scoped>
-
 </style>
