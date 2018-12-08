@@ -9,7 +9,7 @@
 <script>
 export default {
   name: 'section',
-  props: ["image"],
+  props: ["image", 'title'],
   data() {
     return {}
   },
