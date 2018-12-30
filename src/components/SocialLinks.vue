@@ -6,7 +6,7 @@
       </a>
     </li>
     <li :class="itemClass">
-      <a href="https://github.com/takeWarning">
+      <a href="https://github.com/lowzack">
         <font-awesome-icon :icon="faGithub" aria-hidden="true"></font-awesome-icon>
       </a>
     </li>
