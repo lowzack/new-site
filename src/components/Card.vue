@@ -6,7 +6,7 @@
         </div>
       </div>
       <div class="mt-auto">
-        <h4 class="">{{title}}</h4>
+        <h4>{{title}}</h4>
         <h5 class="mb-2">{{subtitle}}</h5>
         <h6 class="mb-2">{{heading}}</h6>
         <slot></slot>

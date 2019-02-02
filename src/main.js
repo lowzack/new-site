@@ -7,9 +7,13 @@ function startApp() {
   // Set up META tags for device viewport (responsiveness)
   const firstMeta = document.getElementsByTagName('meta')[0];
   const viewportMeta = document.createElement('meta');
+  const descriptionMeta = document.createElement('meta');
   viewportMeta.name = "viewport";
   viewportMeta.content = "width=device-width, initial-scale=1, shrink-to-fit=no";
+  descriptionMeta.name = "description"
+  descriptionMeta.content = "Personal website for Zack Low, a Software Engineer based in New York City."
   firstMeta.parentNode.insertBefore(viewportMeta, firstMeta.nextSibling);
+  firstMeta.parentNode.insertBefore(descriptionMeta, firstMeta.nextSibling);
 
   // Ensure there is a <div> to attatch our app to
   if(document.getElementById('app') === null) {

@@ -8,7 +8,8 @@
         <div class="col-sm-auto d-flex align-items-center">
           <div class="d-block w-100 text-center">
             <h1 class="name">Zack Low</h1>
-            <h2 class="title">Software Engineer</h2>
+            <h2 class="title pb-2">Software Engineer</h2>
+            <h3 class="location pb-2">New York City</h3>
             <social-links class="h1 w-100 list-inline" itemClass="list-inline-item mx-3"></social-links>
           </div>
         </div>
@@ -29,7 +30,7 @@
 <script>
 import NavContainer from './NavbarTop.vue';
 import SocialLinks from './components/SocialLinks.vue'
-import profile from './media/prof.jpg';
+import profile from './media/prof.jpeg';
 
 export default {
   components: {
@@ -52,6 +53,10 @@ export default {
     max-width: 50% !important;
     margin: 0 auto;
   }
+}
+
+.title {
+  border-bottom: 1px solid $white;
 }
 
 .profile {
