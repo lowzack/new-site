@@ -53,7 +53,6 @@
 </template>
 
 <script>
-import VueHelmet from 'vue-helmet';
 import Card from './components/Card.vue';
 import Navbar from './components/Navbar.vue';
 import Section from './components/Section.vue';
@@ -72,8 +71,7 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       image: backgroundImage,
-      employmentData,
-      title: 'POOP'
+      employmentData
     }
   },
   components: {
@@ -84,8 +82,7 @@ export default {
     employmentDetail: EmploymentDetail,
     education: EducationContent,
     socialLinks: SocialLinks,
-    transitionSlideRight: TransitionSlideRight,
-    helmet: VueHelmet
+    transitionSlideRight: TransitionSlideRight
   },
   mounted() {
     console.log('mounted');
