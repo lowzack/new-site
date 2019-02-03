@@ -5,9 +5,9 @@ import dibsLogo from '../media/1stdibs_logo.png'
 
 export default {
   currentEmployment: {
-    company: 'Clover Networks Inc.',
+    company: 'Clover Network, Inc.',
     logo: cloverLogo,
-    logoAlt: 'Clover Networks Inc. Logo',
+    logoAlt: 'Clover Network, Inc. Logo',
     website: 'https://www.clover.com/',
     title: 'Web Engineer',
     dates: 'October 2018 - present',
