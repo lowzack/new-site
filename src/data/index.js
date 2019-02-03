@@ -7,6 +7,7 @@ export default {
   currentEmployment: {
     company: 'Clover Networks Inc.',
     logo: cloverLogo,
+    logoAlt: 'Clover Networks Inc. Logo',
     website: 'https://www.clover.com/',
     title: 'Web Engineer',
     dates: 'October 2018 - present',
@@ -20,6 +21,7 @@ export default {
     {
       company: 'Constant Contact',
       logo: ctctLogo,
+      logoAlt: 'Constant Contact Logo',
       website: 'https://www.constantcontact.com/',
       title: 'Software Engineer',
       dates: 'July 2016 - September 2018',
@@ -33,6 +35,7 @@ export default {
     {
       company: 'RIT ITS',
       logo: itsLogo,
+      logoAlt: 'RIT ITS Logo',
       website: 'https://www.rit.edu/its/',
       title: 'Web Application Developer',
       dates: 'August 2015 - July 2016',
@@ -45,6 +48,7 @@ export default {
     {
       company: '1stdibs.com',
       logo: dibsLogo,
+      logoAlt: '1stdibs.com logo',
       website: 'https://www.1stdibs.com',
       title: 'Front-End Engineer Intern',
       dates: 'June 2015 - August 2015',

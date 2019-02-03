@@ -2,7 +2,7 @@
   <div class="border rounded d-flex flex-column p-4 align-items-start shadow zoom bg-white">
       <div class="d-flex w-100 h-100 align-items-center">
         <div class="d-block mx-auto">
-          <img class="d-block img-fluid mb-4" :src="image">
+          <img class="d-block img-fluid mb-4" :alt="imageAlt" :src="image">
         </div>
       </div>
       <div class="mt-auto">
@@ -18,7 +18,7 @@
 <script>
 
 export default {
-  props: ['image', 'title', 'subtitle', 'heading']
+  props: ['image', 'imageAlt', 'title', 'subtitle', 'heading']
 }
 </script>
 
