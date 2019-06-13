@@ -2,6 +2,7 @@ import 'bootstrap';
 import './scss/main.scss';
 import Vue from 'vue';
 import VueHead from 'vue-head'
+import VueAnalytics from 'vue-analytics';
 import App from './App.vue';
 
 function startApp() {
@@ -19,6 +20,9 @@ function startApp() {
     document.body.appendChild(appDiv);
   }
   Vue.use(VueHead);
+  Vue.use(VueAnalytics, {
+    id: window.GA_ID
+  })
   // Initialize app
   new Vue({
     el: '#app',

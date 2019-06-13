@@ -56,7 +56,11 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
-      }
+      },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader'
+      },
     ]
   },
   resolve: {
@@ -79,7 +83,9 @@ module.exports = {
     }),
     // Generate index.html
     new HtmlWebpackPlugin({
-      title: 'Zack Low - Software Engineer'
+      title: 'Zack Low - Software Engineer',
+      template: 'src/index.hbs',
+      GA_ID: process.env.GA_ID
     })
   ]
 }
