@@ -127,7 +127,7 @@ export default {
     transitionSlideRight: TransitionSlideRight
   },
   mounted() {
-    console.log('mounted');
+    this.$ga.page('/');
   }
 }
 </script>

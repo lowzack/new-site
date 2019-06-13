@@ -21,7 +21,7 @@ function startApp() {
   }
   Vue.use(VueHead);
   Vue.use(VueAnalytics, {
-    id: window.GA_ID
+    id: GA_ID
   })
   // Initialize app
   new Vue({

@@ -81,11 +81,12 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery'
     }),
+    new webpack.DefinePlugin({
+      GA_ID: JSON.stringify(process.env.GA_ID)
+    }),
     // Generate index.html
     new HtmlWebpackPlugin({
-      title: 'Zack Low - Software Engineer',
-      template: 'src/index.hbs',
-      GA_ID: process.env.GA_ID
+      title: 'Zack Low - Software Engineer'
     })
   ]
 }
