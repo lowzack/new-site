@@ -51,7 +51,7 @@ module.exports = {
         }]
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg|pdf)$/,
+        test: /\.(png|jpg|jpeg|gif|svg|pdf|ico)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
@@ -76,11 +76,6 @@ module.exports = {
   },
   devtool: '#eval-source-map',
   plugins: [
-    // Provide jQuery everywhere :'(
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    }),
     new webpack.DefinePlugin({
       GA_ID: JSON.stringify(process.env.GA_ID)
     }),

@@ -54,31 +54,6 @@
     <psection class="bg-light shadow-inverted">
       <education></education>
     </psection>
-    <footer class="footer">
-      <div>Favicon made by
-        <a
-          href="https://www.freepik.com/"
-          title="Freepik"
-        >
-          Freepik
-        </a>
-        from
-        <a
-          href="https://www.flaticon.com/"
-          title="Flaticon"
-        >
-          www.flaticon.com
-        </a>
-        is licensed by
-        <a
-          href="http://creativecommons.org/licenses/by/3.0/"
-          title="Creative Commons BY 3.0"
-          target="_blank"
-        >
-        CC 3.0 BY
-        </a>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -93,7 +68,7 @@ import EmploymentDetail from './components/EmploymentDetail.vue';
 import TransitionSlideRight from './components/TransitionSlideRight.vue'
 import EducationContent from './EducationContent.vue';
 import backgroundImage from './media/banner-new.jpg';
-import computerIcon from './media/computer.png';
+import favicon from './media/favicon.ico';
 import employmentData from './data';
 
 export default {
@@ -113,7 +88,7 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', href: computerIcon, sizes: '16x16', type: 'image/png' },
+      { rel: 'icon', href: favicon, sizes: '16x16', type: 'image/png' },
     ]
   },
   components: {
@@ -128,6 +103,12 @@ export default {
   },
   mounted() {
     this.$ga.page('/');
+    this.$ga.event({
+      eventCategory: 'Enter Site',
+      eventAction: 'Page Load',
+      eventLabel: 'Enter Site',
+      eventValue: document.referrer || 'Direct'
+    });
   }
 }
 </script>
@@ -140,14 +121,5 @@ export default {
 }
 .shadow-inverted {
   @include box-shadow(0px, 10px, 20px, #DDD, true);
-}
-
-footer {
-  background-color: #FFFFFF;
-  color: #CCCCCC;
-  text-align: center;
-  a {
-    color: #BBBBBB;
-  }
 }
 </style>

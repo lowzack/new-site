@@ -1,25 +1,26 @@
 <template>
   <ul>
     <li :class="itemClass">
-      <a href="https://www.linkedin.com/in/lowzack/">
+      <Link href="https://www.linkedin.com/in/lowzack/" :label="label">
         <font-awesome-icon :icon="faLinkedin" aria-hidden="true"></font-awesome-icon>
-      </a>
+      </Link>
     </li>
     <li :class="itemClass">
-      <a href="https://github.com/lowzack">
+      <Link href="https://github.com/lowzack" :label="label">
         <font-awesome-icon :icon="faGithub" aria-hidden="true"></font-awesome-icon>
-      </a>
+      </Link>
     </li>
     <li :class="itemClass">
-      <a href="../media/Zack_Low_Resume_2018.pdf">
+      <Link href="../media/Zack_Low_Resume_2018.pdf" :label="label">
         <font-awesome-icon :icon="faFilePdf" aria-hidden="true"></font-awesome-icon>
-      </a>
+      </Link>
     </li>
   </ul>
 </template>
 
 <script>
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
+import Link from './Link.vue';
 import { library } from '@fortawesome/fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/fontawesome-free-brands';
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
@@ -28,10 +29,12 @@ library.add(faLinkedin, faGithub);
 export default {
   props: ['itemClass'],
   components: {
-    FontAwesomeIcon
+    FontAwesomeIcon,
+    Link
   },
   data() {
     return {
+      label: 'socialLinks',
       faLinkedin,
       faGithub,
       faFilePdf
