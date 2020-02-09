@@ -104,9 +104,9 @@ export default {
   mounted() {
     this.$ga.page('/');
     this.$ga.event({
-      eventCategory: 'Enter Site',
-      eventAction: 'Page Load',
-      eventLabel: 'Enter Site',
+      eventCategory: 'page',
+      eventAction: 'load',
+      eventLabel: 'homepage',
       eventValue: document.referrer || 'Direct'
     });
   }

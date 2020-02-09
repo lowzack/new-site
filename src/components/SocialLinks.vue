@@ -1,17 +1,17 @@
 <template>
   <ul>
     <li :class="itemClass">
-      <Link href="https://www.linkedin.com/in/lowzack/" :label="label">
+      <Link href="https://www.linkedin.com/in/lowzack/" :label="linkedin">
         <font-awesome-icon :icon="faLinkedin" aria-hidden="true"></font-awesome-icon>
       </Link>
     </li>
     <li :class="itemClass">
-      <Link href="https://github.com/lowzack" :label="label">
+      <Link href="https://github.com/lowzack" :label="github">
         <font-awesome-icon :icon="faGithub" aria-hidden="true"></font-awesome-icon>
       </Link>
     </li>
     <li :class="itemClass">
-      <Link href="../media/Zack_Low_Resume_2018.pdf" :label="label">
+      <Link href="../media/Zack_Low_Resume_2018.pdf" :label="resume">
         <font-awesome-icon :icon="faFilePdf" aria-hidden="true"></font-awesome-icon>
       </Link>
     </li>
