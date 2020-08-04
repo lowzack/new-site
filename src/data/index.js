@@ -1,7 +1,7 @@
 import cloverLogo from '../media/clover_primary_gray_rgb.png';
-import ctctLogo from '../media/constant_contact_logo.png';
+import ctctLogo from '../media/ctct-logo.svg';
 import itsLogo from '../media/its_logo.png';
-import dibsLogo from '../media/1stdibs_logo.png'
+import dibsLogo from '../media/dibs-logo.svg'
 
 export default {
   currentEmployment: {
@@ -9,9 +9,9 @@ export default {
     logo: cloverLogo,
     logoAlt: 'Clover Network, Inc. Logo',
     website: 'https://www.clover.com/',
-    title: 'Web Engineer',
+    title: 'Senior Software Engineer',
     dates: 'October 2018 - present',
-    overview: 'Build and maintain scalable front-end applications using Typescript and React.js',
+    overview: 'Build and maintain scalable full stack applications using Java, Spring Boot, Redis, MySQL, Typescript and React.js',
     highlights: [
       'Swiftly and precicely deliver critical front-end functionality to an in-house e-commerce platform using Typescript and React while pushing and providing tools for proper unit testing using Jest.',
       'Craft, maintain, and deploy serverless functions to AWS to verify data integrity across systems.'

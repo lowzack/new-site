@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <h2 class="h1 mt-1 border-bottom border-warning">Education</h2>
+    <h2 class="h1 mt-1 border-bottom border-primary">Education</h2>
     <div class="row justify-content-sm-center p-4">
       <div class="col-md-4 text-center d-flex align-items-center logo-container mb-3 mb-md-0">
         <img class="img-fluid mx-auto logo" alt="RIT Logo" src="./media/rit_logo.png"/>

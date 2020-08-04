@@ -6,7 +6,7 @@
     <psection class="bg-white shadow-inverted">
       <transition-slide-right>
         <div class="p-4">
-            <h2 class="h1 mt-1 border-bottom border-warning">Current Employment</h2>
+            <h2 class="h1 mt-1 border-bottom border-primary">Current Employment</h2>
           <div class="row justify-content-sm-center p-4">
             <div class="col-md-4 order-md-2 text-center d-flex align-items-center">
               <img
@@ -33,7 +33,7 @@
     <psection class="bg-light shadow">
       <transition-slide-right>
         <div class="p-4">
-          <h2 class="h1 border-bottom border-warning mt-1">Previous Employment</h2>
+          <h2 class="h1 border-bottom border-primary mt-1">Previous Employment</h2>
           <div class="row d-flex align-items-stretch pt-4">
             <div class="col-sm-12 col-md-4 d-flex align-items-stretch mb-3 mb-md-0" v-for="employer in employmentData.previousEmployment">
               <card
