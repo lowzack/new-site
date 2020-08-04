@@ -1,5 +1,5 @@
 <template>
-  <div class="border rounded d-flex flex-column p-4 align-items-start shadow zoom bg-white">
+  <div class="border d-flex flex-column p-4 align-items-start shadow zoom bg-white">
       <div class="d-flex w-100 h-100 align-items-center">
         <div class="d-block mx-auto">
           <img class="d-block img-fluid mb-4" :alt="imageAlt" :src="image">
@@ -11,7 +11,6 @@
         <h6 class="mb-2">{{heading}}</h6>
         <slot></slot>
       </div>
-    </div>
   </div>
 </template>
 

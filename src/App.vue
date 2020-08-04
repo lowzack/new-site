@@ -37,7 +37,7 @@
           <div class="row d-flex align-items-stretch pt-4">
             <div class="col-sm-12 col-md-4 d-flex align-items-stretch mb-3 mb-md-0" v-for="employer in employmentData.previousEmployment">
               <card
-                class="w-100"
+                class="w-100 border-chip"
                 :title="employer.company"
                 :subtitle="employer.title"
                 :image="employer.logo"

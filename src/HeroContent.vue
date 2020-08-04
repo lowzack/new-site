@@ -5,7 +5,7 @@
         <div class="col-sm-3 text-center d-flex align-items-center">
           <img
             v-bind:src="profile"
-            class="img-fluid rounded-circle profile"
+            class="img-fluid profile border-chip"
             alt="Profile picture of Zack Low"
           />
         </div>
