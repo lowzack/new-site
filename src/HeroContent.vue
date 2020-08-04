@@ -1,17 +1,17 @@
 <template>
   <div class="transparent-bg p-4">
     <div class="container">
-      <div class="row justify-content-sm-left">
-        <div class="col-sm-3 text-center d-flex align-items-center pr-5">
+      <div class="row">
+        <div class="order-2 order-lg-1 col-sm-5 col-lg-3 pt-4 pt-sm-0 pr-lg-5 d-flex align-items-center">
           <img
             v-bind:src="profile"
             class="img-fluid profile border-chip"
             alt="Profile picture of Zack Low"
           />
         </div>
-        <div class="col-sm-auto d-flex align-items-center">
+        <div class="order-1 order-lg-2 col-sm-7 col-lg-9 d-flex align-items-center">
           <div class="w-100">
-            <div class="d-md-inline-flex align-items-end">
+            <div class="d-block d-lg-inline-flex align-items-end">
               <h1 class="pr-4">Zack Low</h1>
               <h2>Software Engineer</h2>
             </div>
@@ -60,19 +60,21 @@ export default {
 
 }
 
-@include media-breakpoint-down(xs) {
-  .profile {
-    max-width: 50% !important;
-    margin: 0 auto;
-  }
-}
-
 .title {
   border-bottom: 1px solid $white;
 }
 
 .profile {
-  max-width: 100%;
+  max-width: 50% !important;
+  margin: 0 auto;
+  
+  @include media-breakpoint-up(sm) {
+    min-width: 75%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-width: 100%;
+  }
 }
 
 .social-links {
