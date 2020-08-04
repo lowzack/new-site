@@ -1,8 +1,8 @@
 <template>
   <div class="transparent-bg p-4">
     <div class="container">
-      <div class="row justify-content-sm-center">
-        <div class="col-sm-3 text-center d-flex align-items-center">
+      <div class="row justify-content-sm-left">
+        <div class="col-sm-3 text-center d-flex align-items-center pr-5">
           <img
             v-bind:src="profile"
             class="img-fluid profile border-chip"
@@ -10,12 +10,14 @@
           />
         </div>
         <div class="col-sm-auto d-flex align-items-center">
-          <div class="d-block w-100 text-center">
-            <h1 class="name">Zack Low</h1>
-            <h2 class="title pb-2">Software Engineer</h2>
+          <div class="w-100">
+            <div class="d-md-inline-flex align-items-end">
+              <h1 class="pr-4">Zack Low</h1>
+              <h2>Software Engineer</h2>
+            </div>
             <h3 class="location pb-2">New York City</h3>
             <social-links
-              class="h1 w-100 list-inline"
+              class="h1 w-100 list-inline social-links"
               itemClass="list-inline-item mx-3"
             />
           </div>
@@ -71,6 +73,12 @@ export default {
 
 .profile {
   max-width: 100%;
+}
+
+.social-links {
+  :first-child {
+    margin-left: 0 !important;
+  }
 }
 
 .transparent-bg {
