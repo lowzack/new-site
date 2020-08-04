@@ -25,7 +25,7 @@
         </div>
       <div class="row mt-4">
         <div class="col-xs-12">
-          <p class="h5 p-2">
+          <p class="h5 px-2 mb-0">
             Passionate about building scalable modern web applications across the entire stack, with experience front-end engineering in JavaScript, API design and development, Serverless cloud functions, DevOps, data modeling, and database design and development.
           </p>
         </div>

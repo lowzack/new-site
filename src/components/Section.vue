@@ -16,7 +16,7 @@ export default {
   computed: {
     style() {
       if (this.image) {
-        return `background-image:url(${this.image});background-size:cover`;
+        return `background-image:url(${this.image});`;
       }
       return '';
     }
@@ -26,4 +26,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../scss/main.scss";
+
+.background-cover {
+  background-size: cover;
+  background-position: center;
+}
 </style>

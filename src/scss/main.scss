@@ -6,7 +6,11 @@ $theme-colors: (
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Raleway:wght@300&display=swap');
 
 html {
-  font-size: 1rem;
+  font-size: .8rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1em;
+  }
 }
 
 body {
@@ -19,22 +23,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-chip {
   border-radius: 1px 5px 5px 5px;
-}
-
-@include media-breakpoint-up(xs) {
-  html {
-    font-size: .8rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1rem;
-  }
 }

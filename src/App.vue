@@ -67,7 +67,7 @@ import SocialLinks from './components/SocialLinks.vue';
 import EmploymentDetail from './components/EmploymentDetail.vue';
 import TransitionSlideRight from './components/TransitionSlideRight.vue'
 import EducationContent from './EducationContent.vue';
-import backgroundImage from './media/banner-new.jpg';
+import backgroundImage from './media/20190930_095016.jpg';
 import favicon from './media/favicon.ico';
 import employmentData from './data';
 
